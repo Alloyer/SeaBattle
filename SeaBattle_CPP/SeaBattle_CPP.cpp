@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include "fstream"
-#include "Map.h"
+#include "Player.h"
 #include <string>
 
 int main()
@@ -14,8 +14,8 @@ int main()
 	std::string FileName;
 	std::cout << "¬ведите название файла с картой\n";
 	std::cin >> FileName;
-	Map *map = new Map();
-	map->initialize_field(FileName);
+	Player *player = new Player();
+	player->initializeField(FileName);
 
     return 0;
 }

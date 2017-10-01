@@ -1,4 +1,4 @@
 ﻿  SeaBattle_CPP.cpp
-c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\map.h(29): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\player.h(29): warning C4018: <: несоответствие типов со знаком и без знака
   SeaBattle_CPP.vcxproj -> C:\Users\alloyer\documents\visual studio 2015\Projects\SeaBattle_CPP\Debug\SeaBattle_CPP.exe
   SeaBattle_CPP.vcxproj -> C:\Users\alloyer\documents\visual studio 2015\Projects\SeaBattle_CPP\Debug\SeaBattle_CPP.pdb (Full PDB)
