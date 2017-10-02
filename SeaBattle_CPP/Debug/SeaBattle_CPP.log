@@ -1,4 +1,8 @@
 ﻿  SeaBattle_CPP.cpp
-c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\player.h(29): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\ai.h(26): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\ai.h(29): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\ai.h(35): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\player.h(30): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\alloyer\documents\visual studio 2015\projects\seabattle_cpp\seabattle_cpp\ai.h(80): warning C4715: AI::isOK: значение возвращается не при всех путях выполнения
   SeaBattle_CPP.vcxproj -> C:\Users\alloyer\documents\visual studio 2015\Projects\SeaBattle_CPP\Debug\SeaBattle_CPP.exe
   SeaBattle_CPP.vcxproj -> C:\Users\alloyer\documents\visual studio 2015\Projects\SeaBattle_CPP\Debug\SeaBattle_CPP.pdb (Full PDB)

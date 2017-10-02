@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "AI.h"
 
 class Player
 {
@@ -38,11 +39,10 @@ public:
 			e.what();
 		}
 		Scanner.close();
-		showFields();
 	}
 
 	//TODO: сделать показ обоих полей, а не только моего
-	void showFields() const
+	void showFields(AI& ai) const
 	{
 		std::cout << "-------------------SHOWING FIELD------------------\n";
 		for (int i = 0; i < 11; i++)
@@ -72,6 +72,16 @@ public:
 						continue;
 					}
 					std::cout << Field[i-1][j-1] << " ";
+				}
+				std::cout << "    ";
+				for (int j = 0; j < 11; j++)
+				{
+					if (j == 0)
+					{
+						std::cout << char(97 + i - 1) << " ";
+						continue;
+					}
+					std::cout << ai.getFieldSymbol(i, j) << " ";
 				}
 			}
 			std::cout << std::endl;

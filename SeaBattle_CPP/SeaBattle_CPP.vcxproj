@@ -146,6 +146,7 @@
     <Text Include="test.txt.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SeaBattle_CPP.h" />
     <ClInclude Include="stdafx.h" />
