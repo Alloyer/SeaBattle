@@ -9,9 +9,9 @@ class AI
 {
 public: 
 
-	AI()
+	void initializeField()
 	{
-		std::cout << "CREATED!\n";
+		//первичное заполнение пустыми клетками
 		for (int i = 0; i < 10; i++)
 		{
 			for (int j = 0; j < 10; j++)
@@ -19,10 +19,7 @@ public:
 				Field[i][j] = 'O';
 			}
 		}
-	}
 
-	void initializeField()
-	{
 		srand(time(0));
 		for (int i = 0; i < 10; i++)
 		{
@@ -178,11 +175,49 @@ private:
 		{
 			if (y >= 0 && y <= 9 && x >= 0 && x <= 10 - size)
 			{
-				for (int i = 0; i < size; i++)
+
+				//случай с (0,0)
+				//
+
+				//случай с (0,9)
+				//
+
+				//случай с (10-size,0)
+				//
+
+				//случай с (10-size,9)
+				//
+
+				//случай с (0,1-8)
+				//
+
+				//случай с (10-size,1-8)
+				//
+
+				//случай с (1-8,0)
+				//
+
+				//случай с (1-8,9)
+				//
+
+				//случаи с (1-8,1-8)
+				if (y >= 1 && y <= 8 && x >= 1 && x <= 8)
+				{
+					for (int i = -1; i <= 1; i++)
+					{
+						for (int j = -1; j <= size; j++)
+						{
+							if (Field[x + j][y + i] != 'O') return false;
+						}
+					}
+					return true;
+				}
+
+				/*for (int i = 0; i < size; i++)
 				{
 					if (Field[x + i][y] != 'O') return false;
 				}
-				return true;
+				return true;*/
 			}
 			else return false;
 		}

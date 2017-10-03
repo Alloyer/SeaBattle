@@ -41,7 +41,6 @@ public:
 		Scanner.close();
 	}
 
-	//TODO: сделать показ обоих полей, а не только моего
 	void showFields(AI& ai) const
 	{
 		std::cout << "-------------------SHOWING FIELD------------------\n";
@@ -63,7 +62,7 @@ public:
 				}
 			}
 			else
-			{//TODO: тут получаетс€ брать данные из массива с корабл€ми компьютера
+			{
 				for (int j = 0; j < 11; j++)
 				{
 					if (j == 0)
@@ -74,14 +73,14 @@ public:
 					std::cout << Field[i-1][j-1] << " ";
 				}
 				std::cout << "    ";
-				for (int j = 0; j < 11; j++)
+				for (int j = 0; j < 11; j++) // тут данные из массива с корабл€ми компьютера
 				{
 					if (j == 0)
 					{
 						std::cout << char(97 + i - 1) << " ";
 						continue;
 					}
-					std::cout << ai.getFieldSymbol(i, j) << " ";
+					std::cout << ai.getFieldSymbol(i, j) << " "; //TODO: заменить это на вывод пол€ попаданий игрока
 				}
 			}
 			std::cout << std::endl;
